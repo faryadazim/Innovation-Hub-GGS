@@ -1,0 +1,137 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+.extraPeople {
+    position: relative;
+    z-index: 2;
+    background: #038387;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: -16px;
+    cursor: pointer;
+}
+
+// Weekly Report Dashboard Style Starts
+.WRButtonSection {
+    display: flex;
+    padding: 10px 5px 0px 0px;
+    border-bottom: 1px solid #ebebeb;
+    button {
+        margin-right: 1px;
+        user-select: none;
+        cursor: pointer;
+        padding: 10px 16px;
+        border: none;
+        font-weight: 400;
+        font-size: 13px;
+        border-radius: 2px;
+    }
+    .activeButton {
+        // color: #ffffff;
+        // background-color: #faa332;
+        // color: #2392b2;
+        // background-color: #ebebeb80;
+        font-weight: 600;
+        color: #18677e;
+        background-color: #cbe1ea;
+        border-bottom: 2px solid #18677e;
+    }
+    .activeButton:hover {
+        // color: #ffffff;
+        // background-color: #ff9100;
+        // color: #18677e;
+        color: #01595c;
+        background-color: #badbe8;
+        border-bottom: 2px solid #18677e;
+    }
+    //rgba(3,131,135,0.4)
+    //   #06ced480
+    .inactiveButton {
+        color: black;
+        background-color: transparent;
+    }
+    .inactiveButton:hover {
+        color: black;
+        background-color: #d4d4d470;
+    }
+}
+
+.DBHistoryHeading {
+    color: #323130;
+    font-size: 18px;
+    margin-left: 10;
+    font-weight: 600;
+}
+
+// color badge style starts
+.badgeInfoSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 15px 0;
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        span {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+        font-size: 13.5px;
+        color: #323130;
+    }
+}
+
+// Weekly Report Dashboard Style Ends
+// Weekly Report - Review Report Style Starts
+// Weekly Report - Review Report Style Ends
+.tableWrapper::-webkit-scrollbar {
+    // width: 4px !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #03838730 !important;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+    background-color: #038387aa !important;
+    border-radius: 30px !important;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    width: 100%;
+    .stickyHead,
+    .stickyData {
+        position: sticky !important;
+    }
+    .stickyData {
+        background-color: #fff !important;
+    }
+    th {
+        // border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        cursor: default;
+        // background-color: #038387;
+        // color: #ffffff;
+        // border: 1px solid #eff5ff30;
+        //fluent ui list color pattern
+        color: #038387;
+        background-color: #effeff;
+        border: 1px solid #01595c11;
+    }
+    td {
+        border: 1px solid #55555510;
+        text-align: left;
+        padding: 8px;
+        cursor: default;
+    }
+}

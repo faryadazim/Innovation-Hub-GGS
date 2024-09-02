@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ggsa-innovation-hub-helping-client-side-solution",
+    "id": "d167cb70-ab83-4674-8521-fdbb69ee6dfa",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "GGSA-InnovationHub-Helping description"
+      },
+      "longDescription": {
+        "default": "GGSA-InnovationHub-Helping description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ggsa-innovation-hub-helping Feature",
+        "description": "The feature that activates elements of the ggsa-innovation-hub-helping solution.",
+        "id": "f70b053f-0d12-4ba0-8c64-e1067a01ee7c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ggsa-innovation-hub-helping.sppkg"
+  }
+}

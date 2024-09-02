@@ -1,0 +1,1407 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+// AnnualPlan
+.extraPeople {
+    position: relative;
+    z-index: 2;
+    background: #038387;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: -16px;
+    cursor: pointer;
+}
+
+.apHeaderSection,
+.dpHeaderSection,
+.pbHeaderSection,
+.atpHeaderSection,
+.attHeaderSection {
+    position: sticky;
+    top: 0;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: #fff;
+    .apHeader {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    div {
+        .apAddBtn {
+            user-select: none;
+            color: white;
+            background-color: #faa332;
+            cursor: pointer;
+            border-radius: 3px;
+            padding: 7px 16px;
+            margin-left: 16px;
+        }
+    }
+}
+
+.apModalBoxButtonSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    button {
+        user-select: none;
+        color: white;
+        font-size: 16px !important;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 600;
+        border: none;
+    }
+    .apModalBoxSubmitBtn {
+        background-color: #36b04b;
+        padding: 5px 25px;
+    }
+    .apModalBoxBackBtn {
+        background-color: #b80000;
+        padding: 5px 25px;
+    }
+}
+
+.apDeletePopupBtnSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        user-select: none;
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        height: 30px;
+        width: 75px;
+        padding: 0;
+    }
+    .apDeletePopupYesBtn {
+        background-color: green;
+        border: 1px solid green;
+    }
+    .apDeletePopupNoBtn {
+        background-color: brown;
+        border: 1px solid brown;
+    }
+}
+
+.deletePopupTitle {
+    color: #2392b2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.deletePopupDesc {
+    font-size: 14px;
+    color: #000;
+}
+
+// delivery plan
+.dpTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dpProfiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.Section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ddSection {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.scrollTop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    background-color: #faa332;
+    z-index: 100;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+}
+
+//ProductionBoard
+//DocumentReview
+.drRequestFormBtnSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 762px;
+    button {
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 20px;
+        margin-right: 5px;
+        cursor: pointer;
+        height: 32px;
+    }
+    .openFileBtn,
+    .OpenHistoryBtn {
+        background-color: #2392b2;
+        padding: 5px 15px !important;
+        border-radius: 3px !important;
+        margin: 0 3px;
+    }
+    .openFileBtn:hover,
+    .OpenHistoryBtn:hover {
+        background-color: #2392b2;
+        opacity: 0.7;
+    }
+    .fixLinkBtn {
+        background-color: #2392b2;
+        padding: 5px 15px !important;
+        border-radius: 3px !important;
+        margin: 0 3px;
+    }
+    .fixLinkBtn:hover {
+        background-color: #2392b2;
+        opacity: 0.7;
+    }
+    .reallocateBtn {
+        padding: 5px 15px !important;
+        border-radius: 3px !important;
+        margin: 0 3px;
+        background-color: #092162;
+    }
+    .reallocateBtn:hover {
+        background-color: #092162;
+        opacity: 0.7;
+    }
+    .cancelRequestBtn {
+        padding: 5px 15px !important;
+        border-radius: 3px !important;
+        margin: 0 3px;
+        background-color: #b80000;
+    }
+    .cancelRequestBtn:hover {
+        background-color: #b80000;
+        opacity: 0.7;
+    }
+    .disableBtn {
+        padding: 5px 15px !important;
+        border-radius: 3px !important;
+        margin: 0 3px;
+        background-color: #ababab;
+        cursor: default;
+    }
+    .drRequestFormSubmitBtn {
+        background-color: #2392b2;
+        cursor: pointer;
+    }
+    .drRequestFormBtnDisabled {
+        background-color: #ababab;
+    }
+}
+
+.drReviewSubmitBtnSection {
+    text-align: right;
+    button {
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 10px 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .drRequestFormSubmitBtn {
+        background-color: #2392b2;
+        cursor: pointer;
+    }
+    .drRequestFormPublishBtn {
+        background-color: #faa332;
+        cursor: pointer;
+    }
+    .drRequestFormBtnDisabled {
+        background-color: #ababab;
+    }
+}
+
+.drPopupLabel {
+    text-align: center;
+    color: #2392b2 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.drPopupDescription {
+    margin: 15px 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.drPopupButtonSection {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+    .successBtnActive {
+        background-color: #36b04b;
+    }
+    .successBtnInActive {
+        background-color: #ababab;
+    }
+    .closeBtn {
+        background-color: #b80000;
+    }
+}
+
+.DR_DLPopupBtnSection {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+        background-color: #2392b2;
+    }
+    button:hover {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+        background-color: #1c738b;
+    }
+}
+
+// toggle btn
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleForDR {
+    @extend .flex;
+    cursor: pointer;
+    input {
+        visibility: hidden !important;
+    }
+    .slider {
+        @extend .flex;
+        justify-content: space-around;
+        background-color: #03838720;
+        border-radius: 4px;
+        height: 30px;
+        width: 250px;
+        position: relative;
+        padding: 2px 0;
+        overflow: hidden;
+        transform: translateX(-20px);
+        p {
+            font-size: 13px;
+        }
+        transition: all 0.4s !important;
+        user-select: none !important;
+    }
+    .slider::before {
+        content: "New to old";
+        @extend .flex;
+        font-size: 13px;
+        color: #ffffffe7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        width: 50%;
+        height: 100%;
+        background-color: #038387;
+        border-radius: 6px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s !important;
+    }
+    input:checked~.slider::before {
+        content: "Old to new";
+        transform: translateX(100%);
+        transition: all 0.4s !important;
+    }
+}
+
+.toggle {
+    @extend .flex;
+    cursor: pointer;
+    input {
+        visibility: hidden !important;
+    }
+    .slider {
+        @extend .flex;
+        justify-content: space-around;
+        background-color: #03838720;
+        border-radius: 4px;
+        height: 30px;
+        width: 250px;
+        position: relative;
+        padding: 2px 0;
+        overflow: hidden;
+        transform: translateX(-20px);
+        p {
+            font-size: 13px;
+        }
+        transition: all 0.4s !important;
+        user-select: none !important;
+    }
+    .slider::before {
+        content: "Annual plan";
+        @extend .flex;
+        font-size: 13px;
+        color: #ffffffe7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        width: 50%;
+        height: 100%;
+        background-color: #038387;
+        border-radius: 6px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s !important;
+    }
+    input:checked~.slider::before {
+        content: "Activity Planner";
+        transform: translateX(100%);
+        transition: all 0.4s !important;
+    }
+}
+
+.toggleforAnnual {
+    @extend .flex;
+    cursor: pointer;
+    input {
+        visibility: hidden !important;
+    }
+    .slider {
+        @extend .flex;
+        justify-content: space-around;
+        background-color: #03838720;
+        border-radius: 4px;
+        height: 30px;
+        width: 250px;
+        position: relative;
+        padding: 2px 0;
+        overflow: hidden;
+        transform: translateX(-20px);
+        p {
+            font-size: 13px;
+        }
+        transition: all 0.4s !important;
+        user-select: none !important;
+    }
+    .slider::before {
+        content: "Annual plan";
+        @extend .flex;
+        font-size: 13px;
+        color: #ffffffe7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        width: 50%;
+        height: 100%;
+        background-color: #038387;
+        border-radius: 6px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s !important;
+    }
+    // input:checked~.slider::before {
+    //     content: "Activity Planner";
+    //     transform: translateX(100%);
+    //     transition: all 0.4s !important;
+    // }
+}
+
+.projectField {
+    color: #000 !important;
+}
+
+.requestReviewPanel::-webkit-scrollbar {
+    // width: 4px !important;
+    width: 15px !important;
+    background-color: #03838730 !important;
+}
+
+.requestReviewPanel::-webkit-scrollbar-thumb {
+    background-color: #038387aa !important;
+    border-radius: 30px !important;
+}
+
+.reviewDesc {
+    margin: 10px 0 !important;
+    margin-bottom: 12px !important;
+    max-height: 75px !important;
+    width: 100%;
+    overflow-x: hidden;
+    padding-right: 10px;
+    color: #000;
+    font-weight: 500;
+}
+
+.reviewDesc::-webkit-scrollbar {
+    width: 4px !important;
+    background-color: #03838730 !important;
+}
+
+.reviewDesc::-webkit-scrollbar-thumb {
+    background-color: #038387aa !important;
+    border-radius: 30px !important;
+}
+
+.addSection::-webkit-scrollbar {
+    width: 4px !important;
+    background-color: #03838730 !important;
+}
+
+.addSection::-webkit-scrollbar-thumb {
+    background-color: #038387aa !important;
+    border-radius: 30px !important;
+}
+
+// ActivityPlan Styles Starts
+.atpHeaderSection {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    .atpHeader {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .atpAddBtn {
+        user-select: none;
+        color: white;
+        background-color: #faa332;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 7px 16px;
+        border: none;
+    }
+    .atpAddBtn:hover {
+        background-color: #ff9100;
+    }
+}
+
+.atpPopupLabel {
+    text-align: center;
+    color: #2392b2 !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.atpModalBoxButtonSection {
+    display: "flex";
+    justify-content: flex-end;
+    width: 960px;
+    margin-top: 30px;
+    margin-right: 20px;
+    button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        margin-left: 20px;
+        padding: 5px 25px;
+        cursor: pointer;
+    }
+    .atpSubmitBtn {
+        background-color: #36b04b;
+    }
+    .atpSubmitBtn:hover {
+        background-color: #00a71c;
+    }
+    .atpSubmitBtnDisabled {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+    .atpCloseBtn {
+        background-color: #b80000;
+    }
+    .atpCloseBtn:hover {
+        background-color: #a00000;
+    }
+}
+
+// ActivityPlan Styles Ends
+// ActivityDeliveryPlan Styles Starts
+.adpHeaderSection {
+    position: sticky;
+    top: 0;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: #fff;
+    .adpHeader {
+        display: flex;
+        justify-content: space-between;
+        .adpHeadering {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+    .adpHeaderDetails {
+        display: flex;
+        div {
+            display: flex;
+            margin-right: 10px;
+        }
+    }
+    .adpBtnSection {
+        display: flex;
+        button {
+            display: flex;
+            user-select: none;
+            color: white;
+            border-radius: 3px;
+            padding: 7px 16px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            border: none;
+            font-weight: 600;
+        }
+        .adpEditBtn {
+            background-color: #faa332;
+            cursor: pointer;
+        }
+        .adpEditBtn:hover {
+            background-color: #ff9100;
+            cursor: pointer;
+        }
+        .adpCancelEdit {
+            background-color: #b80000;
+            cursor: pointer;
+        }
+        .adpCancelEdit:hover {
+            background-color: #a00000;
+            cursor: pointer;
+        }
+        .adpSaveBtn {
+            background-color: #36b04b;
+            cursor: pointer;
+        }
+        .adpSaveBtn:hover {
+            background-color: #00a71c;
+            cursor: pointer;
+        }
+        .adpSaveBtnDisabled {
+            background-color: #f3f2f1;
+            color: rgb(210, 208, 206);
+            cursor: not-allowed;
+            i {
+                color: rgb(210, 208, 206);
+            }
+        }
+    }
+}
+
+// Activity Delivery Plan Styles Ends
+// Product Activity Delivery Plan Styles Starts
+.padpHeaderSection {
+    position: sticky;
+    top: 0;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: #fff;
+    .padpHeader {
+        display: flex;
+        justify-content: space-between;
+        .adpHeadering {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+    .padpHeaderDetails {
+        display: flex;
+        div {
+            display: flex;
+            margin-right: 10px;
+        }
+    }
+}
+
+// Product Activity Delivery Plan Styles Ends
+// Master Product Styles Starts
+.mpHeaderSection {
+    position: sticky;
+    top: 0;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: #fff;
+    .mpHeader {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .mpAddBtn {
+        user-select: none;
+        color: white;
+        background-color: #faa332;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 7px 16px;
+        border: none;
+    }
+    .mpAddBtn:hover {
+        background-color: #ff9100;
+    }
+}
+
+.mpPopupLabel {
+    text-align: center;
+    color: #2392b2 !important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.mpModalBoxButtonSection {
+    display: "flex";
+    justify-content: flex-end;
+    // width: 960px;
+    margin-top: 50px;
+    margin-right: 20px;
+    button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        margin-left: 15px;
+        padding: 5px 25px;
+        cursor: pointer;
+    }
+    .mpSubmitBtn {
+        background-color: #36b04b;
+    }
+    .mpSubmitBtn:hover {
+        background-color: #00a71c;
+    }
+    .mpSubmitBtnDisabled {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+    .mpCloseBtn {
+        background-color: #b80000;
+    }
+    .mpCloseBtn:hover {
+        background-color: #a00000;
+    }
+}
+
+.mpDeletePopupBtnSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        user-select: none;
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        height: 30px;
+        width: 75px;
+        padding: 0;
+    }
+    .mpDeletePopupYesBtn {
+        background-color: green;
+        border: 1px solid green;
+    }
+    .mpDeletePopupNoBtn {
+        background-color: brown;
+        border: 1px solid brown;
+    }
+}
+
+// Master Product Styles Ends
+//Stock List Styles Starts
+.solHeaderSection {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    .solHeader {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .solAddBtn {
+        user-select: none;
+        color: white;
+        background-color: #faa332;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 7px 16px;
+        border: none;
+    }
+    .solAddBtn:hover {
+        background-color: #ff9100;
+    }
+}
+
+.newRequestTitle {
+    color: #2392b2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.solModalBoxButtonSection {
+    display: "flex";
+    justify-content: flex-end;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        margin-left: 20px;
+        padding: 6px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .solSubmitBtn {
+        background-color: #36b04b;
+        // background-color: #2392B2;
+    }
+    .solSubmitBtn:hover {
+        background-color: #00a71c;
+        // background-color: #1d7a93;
+    }
+    .solSubmitBtnDisabled {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+    .solCloseBtn {
+        background-color: #b80000;
+    }
+    .solCloseBtn:hover {
+        background-color: #a00000;
+    }
+}
+
+.solResReqModalBoxButtonSection {
+    display: "flex";
+    justify-content: flex-end;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    button {
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        margin-left: 20px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+    .solSubmitBtn {
+        background-color: #36b04b;
+        // background-color: #2392B2;
+    }
+    .solSubmitBtn:hover {
+        background-color: #00a71c;
+        // background-color: #1d7a93;
+    }
+    .solSubmitBtnDisabled {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+    .solCloseBtn {
+        background-color: #b80000;
+    }
+    .solCloseBtn:hover {
+        background-color: #a00000;
+    }
+}
+
+
+
+
+// Weekly Report Dashboard Style Starts
+.WRButtonSection {
+    display: flex;
+    padding: 10px 5px 0px 0px;
+    border-bottom: 1px solid #ebebeb;
+    button {
+        margin-right: 1px;
+        user-select: none;
+        cursor: pointer;
+        padding: 10px 16px;
+        border: none;
+        font-weight: 400;
+        font-size: 13px;
+        border-radius: 2px;
+    }
+    .activeButton {
+        // color: #ffffff;
+        // background-color: #faa332;
+        // color: #2392b2;
+        // background-color: #ebebeb80;
+        font-weight: 600;
+        color: #18677e;
+        background-color: #cbe1ea;
+        border-bottom: 2px solid #18677e;
+    }
+    .activeButton:hover {
+        // color: #ffffff;
+        // background-color: #ff9100;
+        // color: #18677e;
+        color: #01595c;
+        background-color: #badbe8;
+        border-bottom: 2px solid #18677e;
+    }
+    //rgba(3,131,135,0.4)
+    //   #06ced480
+    .inactiveButton {
+        color: black;
+        background-color: transparent;
+    }
+    .inactiveButton:hover {
+        color: black;
+        background-color: #d4d4d470;
+    }
+}
+
+
+//Stock List Styles Ends
+// Org Reporting Styles Starts
+.orgButtonSection {
+    display: flex;
+    padding: 10px 5px 0px 0px;
+    border-bottom: 1px solid #ababab80;
+    button {
+        margin-right: 1px;
+        user-select: none;
+        cursor: pointer;
+        padding: 10px 16px;
+        border: none;
+        font-weight: 400;
+        font-size: 13px;
+        border-radius: 2px;
+    }
+    .activeButton {
+        color: #ffffff;
+        background-color: #faa332;
+    }
+    .activeButton:hover {
+        color: #ffffff;
+        background-color: #ff9100;
+    }
+    .inactiveButton {
+        color: black;
+        background-color: transparent;
+    }
+    .inactiveButton:hover {
+        color: black;
+        background-color: #d4d4d450;
+    }
+}
+
+.orgExportButton {
+    color: white;
+    background-color: #FAA332;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+}
+
+.orgExportButton:hover {
+    background-color: #ff9100;
+    opacity: 0.9;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+}
+
+.orgConfigModalPeoplePicker {
+    width: 300px;
+    margin: 10px 20px
+}
+
+.ORModalBoxButtonSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    button {
+        user-select: none;
+        color: white;
+        font-size: 16px !important;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 600;
+        border: none;
+        padding: 5px 25px;
+    }
+    .ORModalBoxSubmitBtn {
+        background-color: #36b04b;
+    }
+    .ORModalBoxSubmitBtn:hover {
+        background-color: #00a71c;
+    }
+    .ORModalBoxBackBtn {
+        background-color: #b80000;
+    }
+    .ORModalBoxBackBtn:hover {
+        background-color: #a00000;
+    }
+}
+
+.filebtnWrapper {
+    max-width: 139px;
+    margin-right: 24px;
+    .filebtn {
+        border: 2px solid #555;
+        background-color: #fff;
+        color: #555;
+        font-weight: 500;
+        border-radius: 4px;
+        padding: 0 14px;
+        height: 34px;
+        span {
+            i {
+                color: #555 !important;
+                font-weight: 600;
+            }
+        }
+    }
+    .filebtn:hover {
+        border: 2px solid #2392b2;
+        background-color: #fff;
+        color: #2392b2;
+        font-weight: 500;
+        border-radius: 4px;
+        padding: 0 14px;
+        height: 34px;
+        span {
+            i {
+                color: #2392b2 !important;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.ORFileUploadModalBoxButtonSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    button {
+        user-select: none;
+        color: white;
+        font-size: 16px !important;
+        margin-left: 15px;
+        margin-top: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 600;
+        border: none;
+        padding: 5px 25px;
+    }
+    .ORModalBoxSubmitBtn {
+        background-color: #36b04b;
+    }
+    .ORModalBoxSubmitBtn:hover {
+        background-color: #00a71c;
+    }
+    .ORModalBoxBackBtn {
+        background-color: #b80000;
+    }
+    .ORModalBoxBackBtn:hover {
+        background-color: #a00000;
+    }
+}
+
+.ORDeletePopupTitle {
+    color: #2392b2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ORDeletePopupDesc {
+    font-size: 14px;
+    color: #000;
+}
+
+.ORDeletePopupBtnSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        user-select: none;
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        height: 30px;
+        width: 75px;
+        padding: 0;
+    }
+    .ORDeletePopupSuccessBtn {
+        background-color: #36b04b;
+        border: 1px solid #00a71c;
+    }
+    .ORDeletePopupSuccessBtn:hover {
+        background-color: #00a71c;
+        border: 1px solid #00a71c;
+    }
+    .ORDeletePopupDisabled {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+    .ORDeletePopupCancelBtn {
+        background-color: #b80000;
+        border: 1px solid #a00000;
+    }
+    .ORDeletePopupCancelBtn:hover {
+        background-color: #a00000;
+        border: 1px solid #a00000;
+    }
+}
+
+// Org Reporting Styles Ends
+// Distribution list Styles Starts
+.flexWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dlHeaderButtonSection {
+    display: flex;
+    padding: 10px 5px 0px 0px;
+    border-bottom: 1px solid #ababab80;
+    button {
+        margin-right: 1px;
+        user-select: none;
+        cursor: pointer;
+        padding: 10px 45px;
+        border: none;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 2px;
+    }
+    .activeButton {
+        color: #ffffff;
+        background-color: #038387;
+    }
+    .activeButton:hover {
+        color: #ffffff;
+        background-color: #026468;
+    }
+    .inactiveButton {
+        // color: black;
+        color: #038387;
+        background-color: rgba(3, 131, 135, .12549019607843137);
+    }
+    .inactiveButton:hover {
+        // color: black;
+        color: #038387;
+        background-color: rgba(2, 109, 112, 0.125);
+    }
+}
+
+.dlSelectAllSection {
+    border: 2px solid #7C7C7C;
+    background-color: #e7e7e7;
+    width: 100px;
+    border-radius: 4px;
+    display: "flex";
+    margin: 10px 0px 20px 0px;
+    padding: 5px;
+}
+
+.dlFooterSection {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    button {
+        user-select: none;
+        color: white;
+        border-radius: 3px;
+        padding: 7px 16px;
+        margin-left: 10px;
+        border: none;
+    }
+    .activeBtn {
+        background-color: #038387;
+        cursor: pointer;
+    }
+    .activeBtn:hover {
+        background-color: #026468;
+        cursor: pointer;
+    }
+    .inActiveBtn {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+}
+
+.dlPoliticianAddBtnSection {
+    margin-bottom: 10px;
+    button {
+        user-select: none;
+        color: white;
+        border-radius: 3px;
+        padding: 7px 16px;
+        border: none;
+    }
+    .activeButton {
+        background-color: #faa332;
+        cursor: pointer;
+    }
+    .inActiveButton {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+}
+
+.dlPoliticianDeleteBtnSectionActive {
+    display: flex;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+.dlPoliticianDeleteBtnSectionInActive {
+    display: flex;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #ababab;
+    cursor: not-allowed;
+}
+
+.atpPopupInnerSection {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.dlPopupDescription {
+    margin: 15px 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.dlPopupLabel {
+    text-align: center;
+    color: #2392b2 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dlPopupButtonSection {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    button {
+        border: none;
+        color: #fff;
+        // background-color: #36b04b;
+        background-color: #b80000;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+}
+
+// Distribution list Styles Ends
+// Distribution approval config Styles Starts
+.dacHeaderSection {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    .dacHeader {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .dacAddBtn {
+        user-select: none;
+        color: white;
+        background-color: #faa332;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 7px 16px;
+        border: none;
+    }
+    .dacAddBtn:hover {
+        background-color: #ff9100;
+    }
+}
+
+.dacHeaderPopupLabel {
+    text-align: center;
+    color: #2392b2 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dacPopupLabel {
+    color: #2392b2 !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dacPopupModalPeoplePicker {
+    width: 300px;
+    margin: 5px 0px
+}
+
+.dacPopupBodySection {
+    height: 500px;
+    overflow: auto;
+}
+
+.dacPopupBodySection::-webkit-scrollbar {
+    width: 10px !important;
+    background-color: #03838730 !important;
+}
+
+.dacPopupBodySection::-webkit-scrollbar-thumb {
+    background-color: #038387aa !important;
+    border-radius: 30px !important;
+}
+
+.dacPopupButtonSection {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    button {
+        border: none;
+        color: #fff;
+        background-color: #b80000;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+    .PopupSuccessBtn {
+        background-color: #36b04b;
+        border: 1px solid #00a71c;
+    }
+    .PopupSuccessBtn:hover {
+        background-color: #00a71c;
+        border: 1px solid #00a71c;
+    }
+    .PopupDisabled {
+        background-color: #ababab;
+        cursor: not-allowed;
+    }
+    .PopupCancelBtn {
+        background-color: #b80000;
+        border: 1px solid #a00000;
+    }
+    .PopupCancelBtn:hover {
+        background-color: #a00000;
+        border: 1px solid #a00000;
+    }
+}
+
+// Distribution approval config Styles Ends

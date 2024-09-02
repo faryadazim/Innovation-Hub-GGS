@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ggsa-innovationhub-helping-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ggsaInnovationhubHelping/GgsaInnovationhubHelpingWebPart.js",
+          "manifest": "./src/webparts/ggsaInnovationhubHelping/GgsaInnovationhubHelpingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GgsaInnovationhubHelpingWebPartStrings": "lib/webparts/ggsaInnovationhubHelping/loc/{locale}.js"
+  }
+}

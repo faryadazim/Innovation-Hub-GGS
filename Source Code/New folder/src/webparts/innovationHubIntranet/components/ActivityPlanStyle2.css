@@ -1,0 +1,120 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.MyTable_2 table {
+  border-collapse: collapse;
+}
+.MyTable_2 .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.MyTable_2 .table td,
+.MyTable_2 .table th {
+  padding: 6px;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.MyTable_2 .table thead th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #ddd;
+  background: #f0f7f7;
+  text-align: center;
+  vertical-align: middle;
+  color: #038387;
+}
+.MyTable_2 th.Title {
+  background: #f0f7f7;
+  text-align: left !important;
+  color: #038387;
+  border-color: #fff !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 14px;
+}
+.lessonDiv {
+  height: 25px;
+  font-weight: 600;
+}
+.MyTable_2 .table-bordered td,
+.MyTable_2 .table-bordered th {
+  border-bottom: 1px solid #f1f1f1;
+}
+.MyTable_2 .table-bordered th {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.MyTable_2 .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.MyTable_2 .table tr:hover {
+  background: #f3f2f0;
+}
+.MyTable_2 .table td {
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 67px !important; /* Adjust the value as per your desired width */
+}
+
+.Title {
+  white-space: nowrap !important;
+}
+.typeData {
+  white-space: nowrap !important;
+}
+.MyTable_2 {
+  height: 450px;
+  overflow-y: scroll;
+}
+tr {
+  height: 35px;
+}
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar {
+  width: 12px;
+  background-color: #eef7f7;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #038387;
+  background-color: #038387;
+}
+
+.text-center-do{
+  text-align: center !important;
+}
+.fixed-width-table {
+  table-layout: fixed;
+  width: 100%; /* You can set the table width as per your requirement */
+}
+
+.fixed-width-table td {
+  width: 100px; /* Set the desired fixed width for the table cells */
+  /* Other styling if needed */
+}
+
+
+.ms-TooltipHost{
+  display: flex !important;
+  justify-content: center;
+}

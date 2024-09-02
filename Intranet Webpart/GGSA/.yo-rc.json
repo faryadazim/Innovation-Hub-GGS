@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "14.15.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "ggsa-innovation-hub-helping",
+    "libraryId": "d167cb70-ab83-4674-8521-fdbb69ee6dfa",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "GGSA-InnovationHub-Helping",
+    "solutionShortDescription": "GGSA-InnovationHub-Helping description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
